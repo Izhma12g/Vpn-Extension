@@ -84,3 +84,8 @@ img {
     visibility: hidden;
     z-index: 2;
 }
+.test {
+    font-size: 32px;
+    color: #999;
+    text-align: right;
+}
