@@ -1,0 +1,30 @@
+{
+  "name": "School Blocker",
+  "version": "4.4.5",
+  "description": "Online VPN service that encrypts your internet traffic and hides your IP with physical location. Upgrade your privacy and security now.",
+  "action": {
+    "default_popup": "hello.html",
+    "default_icon": "media/sexyman.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js"]
+    }
+  ],
+
+
+  "web_accessible_resources": [
+    {
+      "resources": ["media/*"],
+      "matches": ["http://*/*", "https://*/*"]
+    }
+  ],
+
+  "host_permissions": ["<all_urls>"],
+  "permissions": ["alarms", "notifications", "storage", "tabs", "scripting", "activeTab", "proxy"],
+  "manifest_version": 3,
+"background": {
+    "service_worker": "background.js"
+}
+}

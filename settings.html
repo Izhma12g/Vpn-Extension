@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <style>
+        body {
+            overflow: hidden; /* Prevents scrollbars */
+            width: 220px;
+            height: 320px;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+        .container {
+            height: 100%;
+            background: #ebebeb;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .header {
+            margin-bottom: 15px;
+            margin-top: 0;
+        }
+        .wrapper {
+            background-color: #ddcfff;
+            padding: 15px;
+            border-radius: 0 22px 0 22px;
+        }
+        .form-group {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .form-group label {
+            width: 115px;
+            text-align: left;
+            font-weight: bold;
+            font-size: 13px;
+            height: 30px;
+            line-height: 30px;
+        }
+        input {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 22px;
+            height: 14px;
+            padding: 3px;
+            text-align: center;
+        }
+        .connect-btn {
+            z-index: 1;
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 25px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">Settings</h1>
+        <div class="wrapper">
+            <div class="form-group">
+                <label for="jump">FBI Chance:</label>
+                <input type="numeric" id="jump">
+            </div>
+            <div class="form-group">
+                <label for="imgRep">Image Replace:</label>
+                <input type="numeric" id="imgRep">
+            </div>
+            <div class="form-group">
+                <label for="scaleFac">Scaling Factor:</label>
+                <input type="numeric" id="scaleFact">
+            </div>
+            <div class="form-group">
+                <label for="webPop">Website Chance:</label>
+                <input type="numeric" id="webPop">
+            </div>
+            <div class="form-group">
+                <input type="numeric" id="webUrl" placeholder="Jump URL" style="width: 100%; text-align: left;">
+            </div>
+        </div>
+        <button class="connect-btn" id="save">Save Settings</button>
+        <a href="hello.html" id="link" style="display: none;"></a>
+    </div>
+    <script src="popupSet.js" defer></script>
+</body>
+</html>
