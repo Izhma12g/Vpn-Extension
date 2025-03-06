@@ -1,4 +1,4 @@
-const gifs = ["200w.gif", "slap.gif", "gyatt2.png", "skib.gif"];  //const gifs = ["beast.gif", "200w.gif", "edging.gif", "guys.gif", "slap.gif", "juicy.gif", "gyatt2.png", "skib.gif"];
+const gifs = ["200w.gif", "slap.gif", "gyatt2.png", "skib.gif"];
 let fbi, jump, imgRep, webPop, scaleFact, webUrl;
 function preventTabClose(event) { event.returnValue = 'temp';}
 
@@ -72,9 +72,9 @@ function cenafy() {
 window.addEventListener("load", () => {
   let chance = Math.floor(Math.random() * webPop);
   if (!window.location.href.includes(webUrl) && chance === 0) {
-    //window.location.href = webUrl;
+    window.location.href = webUrl;
   } else if (chance === 1) {
-    // startFlashing();
+    startFlashing();
   }
 });
 
@@ -113,18 +113,11 @@ for (let i = 0; i < 5; i++) {
 
 
 const replacements = [
-  "sex slave", "sussy cream", "Edp rizz", "big dick", "rape", "Erection",
-  "Niggers bbc", "skibidi", "rizzler", "fantum tax", "♂fisting♂",
+  "good boy", "duke dennis", "not that deep", "ohio", "rizzaholic", "goon",
+  "pmo", "skibidi", "rizzler", "fantum tax", "ts",
   "Livvy Dunne", "among us ඞ", "edging", "mewing", "Level 5  gyatt",
-  "Dr John Mew", "cocaine", "horny", "sigma", "alpha male"
+  "Dr John Mew", "sigma", "alpha male"
 ];
-
-// const replacements = [
-//   "sussy cream", "Edp rizz", "Erection",
-//   "bbc", "skibidi", "rizzler", "fantum tax", "♂fisting♂",
-//   "Livvy Dunne", "among us ඞ", "edging", "mewing", "Level 5  gyatt",
-//   "Dr John Mew", "sigma", "alpha male"
-// ];
 
 function getRandomReplacement() {
   return replacements[Math.floor(Math.random() * replacements.length)];
