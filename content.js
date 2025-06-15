@@ -1,4 +1,4 @@
-const gifs = ["200w.gif", "slap.gif", "gyatt2.png", "skib.gif"];
+const gifs = ["200w.gif", "slap.gif", "gyatt2.png", "skib.gif", "ben.png", "ben22.png", "bens.png", "dada.png", "dfokkfd.png", "jih.png", "pafla.png", "ssos.png"];
 let fbi, jump, imgRep, webPop, scaleFact, webUrl;
 function preventTabClose(event) { event.returnValue = 'temp';}
 
